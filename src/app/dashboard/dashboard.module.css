@@ -1,0 +1,71 @@
+/* dashboard.module.css */
+
+.dashboard {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the dashboard */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Darker color for the title */
+    margin-bottom: 20px;
+  }
+  
+  .dataSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dataCard {
+    background-color: #ffffff; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .dataCard:hover {
+    transform: scale(1.05); /* Slightly larger on hover for emphasis */
+  }
+  
+  .dataCardTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555; /* Medium gray for the card title */
+  }
+  
+  .dataCardValue {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007BFF; /* Blue color for value to stand out */
+    margin-top: 10px;
+  }
+  
+  .chartContainer {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  @media (min-width: 640px) {
+    .dataCard {
+      width: 300px; /* Larger card width on medium and up screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .dashboard {
+      padding: 40px; /* Increase padding on larger screens for spacious layout */
+    }
+  }
+  
